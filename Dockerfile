@@ -1,0 +1,5 @@
+FROM mysql
+MAINTAINER Joao Emilio
+ENV MYSQL_ROOT_PASSWORD rootroot
+COPY . /tmp/
+WORKDIR /tmp/

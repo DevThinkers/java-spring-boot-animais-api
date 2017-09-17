@@ -18,4 +18,5 @@ public class AnimalRESTController {
     public List<Animal> findAll() {
         return repository.findAll();
     }
+    
 }
