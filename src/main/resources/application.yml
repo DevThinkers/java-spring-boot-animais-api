@@ -1,0 +1,24 @@
+server:
+   contextPath: /
+
+spring:
+   datasource:
+      username: root
+      password: rootroot
+      url: jdbc:mysql://localhost:3306/animais
+      tomcat:
+         driver-class-name: com.mysql.jdbc.Driver
+      validationQuery: 1
+      testWhileIdle: true
+   jpa:
+       show-sql: true
+       hibernate:
+          ddl-auto: update
+          naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+       properties:
+          hibernate:
+             dialect: org.hibernate.dialect.MySQL5Dialect
+logging:
+   file: SystemOut.log
+   level:
+      root: INFO
