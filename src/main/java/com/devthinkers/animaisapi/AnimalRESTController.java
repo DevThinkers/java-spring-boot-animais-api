@@ -8,15 +8,15 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/animal")
+@RequestMapping("/animal")
 public class AnimalRESTController {
 
     @Autowired
-    private AnimalRepository repository;
+    private AnimalService service;
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public List<Animal> findAll() {
-        return repository.findAll();
+        return this.service.findAll();
     }
-    
+
 }
