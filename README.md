@@ -19,7 +19,7 @@ chmod 755 *.sh
  ./start-mysql.sh
  ./mysql-login.sh
 
-mysql -u root -p rootroot
+mysql -u root -p
 source /tmp/create-table-animais.sql
 
 quit
