@@ -1,6 +1,14 @@
 # What is this?
 Simple java application written with Spring Boot that connects to a MySQL server and retrieve data from a table called "animal". This demo is used to show how to set up AWS Security Groups, isolating an AWS RDS Aurora DB instance to prevent access from the internet, only authorizing access from an instance that is running on a specific Security Group. You can watch the video in here: [AI&Cloud Youtube Channel](https://www.youtube.com/channel/UCtfjiPoa_PmTc2jy-RCS3sw)
 
+## Dependencies
+In order to perform the below steps, you have to have the following products already installed on either a Mac or a Linux machine:
+
+* Java JDK 8
+* Apache Maven 3.5.1
+* Git 
+* Docker
+
 ## Setting up this demo
 ```
 git clone https://github.com/DevThinkers/java-spring-boot-animais-api.git animais-api
